@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      ul li {
+        color: red;
+        text-decoration: underline;
+        font-size: xx-large;
+      }
+      #lecture > li {
+        border: 1px solid red;
+      }
+      ul,
+      ol {
+        background-color: powderblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="active">수업의 순서</h1>
+    <ul>
+      <li class="active">HTML</li>
+      <li id="select">CSS</li>
+      <li class="active">JavaScript</li>
+    </ul>
+    <ol id="lecture">
+      <li class="active">HTML</li>
+      <li id="select">
+        CSS
+        <ol>
+          <li>selector</li>
+          <li>declaration</li>
+        </ol>
+      </li>
+      <li class="active">JavaScript</li>
+    </ol>
+  </body>
+</html>

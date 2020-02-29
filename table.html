@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>HTML_TABLE</title>
     <meta charset="utf-8" />
-    <tile>GOBAD820</tile>
   </head>
   <body>
-    <tr></tr>
+    <table border="2">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>성별</th>
+          <th>주소</th>
+          <th>회비</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>최진혁</td>
+          <td>남</td>
+          <td rowspan="2">청주</td>
+          <!--rowspan = "2" 2개의 행이 병합된다-->
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>최유빈</td>
+          <td>여</td>
+          <!-- <td>청주</td> -->
+          <td>1000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">합계</td>
+          <td>1500</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!--td = table data
+    tr = table row-->
   </body>
 </html>
