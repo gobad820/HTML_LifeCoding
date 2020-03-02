@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <!-- css = cascading case sheet -->
+  <!-- 우선순위의 필요성 대두 -->
+  <head>
+    <style>
+      li {
+        /*우선순위 가장 낮음*/
+        color: red;
+        font-size: xx-large;
+      }
+      .clssel {
+        color: green;
+      }
+      #idsel {
+        color: blue !important;
+      } /* important는 우선순위를 최우선으로 만들어준다 */
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>html</li>
+      <li id="idsel" class="clssel" style="color:powderblue">css</li>
+      <li>javascript</li>
+    </ul>
+    <ol>
+      <p>우선순위 순서</p>
+      <li>style attribute</li>
+      <li>id selector</li>
+      <li>class selector</li>
+      <li>tag selector</li>
+      <p>
+        구체적인 것이 우선순위가 가장 높고 포괄절인것이 우선순위가 가장 낮다.
+      </p>
+    </ol>
+  </body>
+</html>
