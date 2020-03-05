@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html {
+        border: 1px solid gray;
+      }
+      div {
+        border: 5px solid tomato;
+        margin: 10px;
+      }
+      #me {
+        position: relative !important;
+        /* position의 기본값은 static이므로 left,top의 offset값을 무시하고
+            원래의 위치에 정적으로 위치해있다.따라서 position을 relative로 바꾸어야 
+            됨 */
+        left: 100px;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="other">other</div>
+    <div id="parent">
+      parent
+
+      <div id="me">me</div>
+    </div>
+  </body>
+</html>
